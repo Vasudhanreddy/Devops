@@ -1,0 +1,16 @@
+# this is my first template for resources provisioning
+AWSTemplateFormatVersion: "2010-09-09"
+Description: A simple instance creation 
+Resources:
+  myfirstbucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: "aws-poc-s3bucket-template"
+      VersioningConfiguration:
+        Status: Enabled 
+
+
+
+
+        
+  
