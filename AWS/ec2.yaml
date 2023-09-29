@@ -3,12 +3,13 @@ Description: an ec2 creation using template
 Parameters:
   InstanceTypeParameter:
     Type: String
-    Default: t2.micro
+    Default: t3.micro
     AllowedValues:
-      - t2.micro
-      - m1.small
-      - m1.large
-    Description: Enter t2.micro, m1.small, or m1.large. Default is t2.micro.
+      - t3.micro
+      - t3.small
+      - t3.medium
+      
+    Description: Enter t3.micro, t3.small, or t3.medium. Default is t3.micro.
 
 Resources:
   Ec2Instance:
@@ -16,7 +17,7 @@ Resources:
     Properties:
       InstanceType: !Ref InstanceTypeParameter
         
-      ImageId: ami-0ff8a91507f77f867
+      ImageId: ami-08766f81ab52792ce 
 
 #Outputs:
 #parameter referencing
