@@ -19,4 +19,4 @@ Resources:
       ImageId: ami-0ff8a91507f77f867
 
 #Outputs:
-
+#parameter referencing
